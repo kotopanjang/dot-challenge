@@ -1,9 +1,6 @@
 package model
 
 import (
-	"database/sql"
-	"time"
-
 	"gorm.io/gorm"
 )
 
@@ -15,7 +12,7 @@ type Member struct {
 	Title     string
 	ProjectId string
 
-	CreatedAt time.Time    `gorm:"->"`
-	UpdatedAt time.Time    `gorm:"->"`
-	DeletedAt sql.NullTime `gorm:"index;->"`
+	// CreatedAt time.Time    `gorm:"->"`
+	// UpdatedAt time.Time    `gorm:"->"`
+	// DeletedAt sql.NullTime `gorm:"index;->"`
 }

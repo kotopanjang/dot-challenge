@@ -1,9 +1,6 @@
 package model
 
 import (
-	"database/sql"
-	"time"
-
 	"gorm.io/gorm"
 )
 
@@ -18,7 +15,7 @@ type Project struct {
 	Progress   float64
 	Members    []Member `gorm:"foreignKey:ProjectId"`
 
-	CreatedAt time.Time    `gorm:"->"`
-	UpdatedAt time.Time    `gorm:"->"`
-	DeletedAt sql.NullTime `gorm:"index;->"`
+	// CreatedAt time.Time    `gorm:"->"`
+	// UpdatedAt time.Time    `gorm:"->"`
+	// DeletedAt sql.NullTime `gorm:"index;->"`
 }

@@ -6,4 +6,4 @@ url="127.0.0.1:6379"
 password=""
 
 [mysql]
-uri="root:root@tcp(127.0.0.1:3306)/DOT?charset=utf8mb4&parseTime=True&loc=Local"
+uri="root:root@tcp(127.0.0.1:3306)/dot?charset=utf8mb4&parseTime=True&loc=Local"
