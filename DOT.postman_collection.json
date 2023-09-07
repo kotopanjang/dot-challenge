@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "00f0a42b-f921-4873-9819-433cf2b94b9e",
+		"name": "DOT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13476649",
+		"_collection_link": "https://www.postman.com/cloudy-shadow-565203/workspace/dot/collection/13476649-00f0a42b-f921-4873-9819-433cf2b94b9e?action=share&creator=13476649&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get Projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9400/project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9400",
+					"path": [
+						"project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Project By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9400/project/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9400",
+					"path": [
+						"project",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Project 1\",\n    \"clientname\": \"PERTAMINA\",\n    \"budget\": 50000000,\n    \"progress\": 0,\n    \"members\": [\n        {\n            \"name\": \"Rahadian\",\n            \"title\": \"Project Manager\",\n            \"projectid\": \"1\"\n        },\n        {\n            \"name\": \"Ardya\",\n            \"title\": \"Backend Engineer\",\n            \"projectid\": \"1\"\n        },\n        {\n            \"name\": \"Koto\",\n            \"title\": \"Frontend Engineer\",\n            \"projectid\": \"1\"\n        },\n        {\n            \"name\": \"Panjang\",\n            \"title\": \"Frontend Engineer\",\n            \"projectid\": \"1\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9400/project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9400",
+					"path": [
+						"project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Project",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Project 4\",\n    \"ClientName\": \"test lageee\",\n    \"Budget\": 150000000,\n    \"Progress\": 0.1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9400/project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9400",
+					"path": [
+						"project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Progress",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"progress\": 0.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9400/project/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9400",
+					"path": [
+						"project",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Project",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"progress\": 0.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9400/project/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9400",
+					"path": [
+						"project",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
